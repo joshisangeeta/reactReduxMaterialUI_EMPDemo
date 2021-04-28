@@ -6,8 +6,7 @@ class AddEmployeeComponent extends Component {
         super(props)
 
         this.state = {
-            // step 2
-         //   id: this.props.match.params.id,
+            
             firstName: '',
             lastName: '',
             emailId: ''
@@ -90,7 +89,7 @@ class AddEmployeeComponent extends Component {
         return (
             <div>
                 <br></br>
-                   <div className = "container">
+                   <div className = "container" >
                         <div className = "row">
                             <div className = "card col-md-6 offset-md-3 offset-md-3">
                                 {

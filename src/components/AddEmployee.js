@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { addEmployee } from '../actions/actions';
 
 const AddEmployee = (props) => (
-    <div>
+    <div >
         <h3>Set Employee information:</h3>
         <AddEmployeeComponent employee={props.employee}
             handleCancel={()=>{props.history.push('/');}}
