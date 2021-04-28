@@ -54,7 +54,8 @@ class AddEmployeeComponent extends Component {
     }
 
     cancel(){
-        this.props.history.push('/employees');
+        this.props.handleCancel();
+       // this.props.history.push('/employees');
     }
     onSubmit(e) {
         e.preventDefault();

@@ -7,6 +7,7 @@ const AddEmployee = (props) => (
     <div>
         <h3>Set Employee information:</h3>
         <AddEmployeeComponent employee={props.employee}
+            handleCancel={()=>{props.history.push('/');}}
             onSubmitEmployee={(employee) => {
                 console.log("hi "+employee.firstName+employee.lastName+employee.emailId)
                 props.dispatch(addEmployee(employee));
